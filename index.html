@@ -12,128 +12,179 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         .container {
+            display: flex;
             width: 80%;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
         }
+
+        .main-content {
+            width: 70%;
+            padding-right: 20px;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding-left: 20px;
+            border-left: 2px solid #ccc;
+        }
+
         header {
-            text-align: center;
-            padding: 50px 0;
+            text-align: left;
+            padding: 20px 0;
             background-color: #2c3e50;
             color: white;
+            padding-left: 20px;
         }
+
         header h1 {
             margin: 0;
         }
+
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
         .section {
             margin-bottom: 30px;
         }
+
         .section-title {
             font-size: 1.5em;
             margin-bottom: 10px;
             color: #2c3e50;
         }
+
         .skills, .languages, .hobbies {
             list-style-type: none;
             padding: 0;
         }
+
         .skills li, .languages li, .hobbies li {
             margin: 5px 0;
         }
-        .profile-img {
-            width: 150px;
-            border-radius: 50%;
-            margin: 20px 0;
+
+        /* Sidebar styling for sections */
+        .sidebar h2 {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
-        <h1>Ilyass Dablaq</h1>
-        <p>Wirtschaftsinformatiker</p>
-        <p>Email: ilyass.dablaq@studmail.w-hs.de | Telefon: +49 1788456652</p>
-        <p>Adresse: Wodanstr. 7a, 45891 Gelsenkirchen</p>
-    </header>
+    <div class="main-content">
+        <header>
+            <h1>Ilyass Dablaq</h1>
+            <p>Wirtschaftsinformatiker</p>
+            <p>Email: ilyass.dablaq@studmail.w-hs.de | Telefon: +49 1788456652</p>
+            <p>Adresse: Wodanstr. 7a, 45891 Gelsenkirchen</p>
+        </header>
 
-    <div class="section">
-        <h2 class="section-title">Profil</h2>
-        <p>Als Wirtschaftsinformatik-Student liegt mein Schwerpunkt auf Datenanalyse und Geschäftsprozessen. Meine Ausbildung qualifiziert mich als Brückenbauer zwischen der IT und wirtschaftlichen Anforderungen.</p>
+        <div class="section">
+            <h2 class="section-title">Profil</h2>
+            <p>Als Wirtschaftsinformatik-Student liegt mein Schwerpunkt auf Datenanalyse und Geschäftsprozessen, mit einem besonderen Interesse an Informationssystemen, insbesondere SAP S/4HANA. Meine Ausbildung qualifiziert mich als Schnittstelle zwischen IT und wirtschaftlichen Anforderungen, wodurch ich effektive Lösungen für komplexe Geschäftsprozesse entwickeln kann.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Ausbildung</h2>
+            <ul>
+                <li><strong>Bachelor of Science: Wirtschaftsinformatik</strong> (Okt. 2020 - laufend)
+                    <p>Westfälische Hochschule, Gelsenkirchen</p>
+                    <p>Credit Punkte: 120</p>
+                    <p>Arbeite gerade an einem Softwareprojekt für Dokumentenmanagement</p>
+                </li>
+                <li><strong>Ökumenisches Studienwerk e.V.</strong> (Aug. 2019 - Aug. 2020)
+                    <p>Studienkolleg, Bochum</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Nebentätigkeiten</h2>
+            <ul>
+                <li><strong>Verkäufer</strong> (Dez. 2023 - laufend)
+                    <p>Deim GmbH, Gelsenkirchen</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Kenntnisse</h2>
+            <ul class="skills">
+                <li>Python (Numpy, Pandas, Matplotlib)</li>
+                <li>SQL/NOSQL (PostgreSQL/MongoDB)</li>
+                <li>Objektorientierte Programmierung (Java)</li>
+                <li>UML/BPMN (Modeling Language)</li>
+                <li>JavaScript (Node.js/Express.js)</li>
+                <li>Microsoft Office</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Projekte</h2>
+            <ul>
+                <li><a href="https://github.com/ilyassdablaq/Intellidoc" target="_blank">github.com/ilyassdablaq/Intellidoc</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div class="section">
-        <h2 class="section-title">Ausbildung</h2>
-        <ul>
-            <li><strong>Bachelor of Science: Wirtschaftsinformatik</strong> (Okt. 2020 - laufend)
-                <p>Westfälische Hochschule, Gelsenkirchen</p>
-                <p>Durchschnittsnote: 3.2</p>
-                <p>Credit Punkte: 108</p>
-                <p>Arbeitete gerade an Intelligentes Dokumentenmanagement - IntelliDoc als Software Projekt</p>
-            </li>
-            <li><strong>Ökumenisches Studienwerk e.V.</strong> (Aug. 2019 - Aug. 2020)
-                <p>Studienkolleg, Bochum</p>
-            </li>
-        </ul>
-    </div>
+    <div class="sidebar">
+        <img src="images/cvbild.jpg" alt="Beschreibung des Bildes" class="profile-img">
 
-    <div class="section">
-        <h2 class="section-title">Nebentätigkeiten</h2>
-        <ul>
-            <li><strong>Verkäufer</strong> (Dez. 2023 - laufend)
-                <p>Deim GmbH, Gelsenkirchen</p>
-            </li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>Fähigkeiten</h2>
+            <ul>
+                <li>Programmieren</li>
+                <li>Analyse</li>
+                <li>Design</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2 class="section-title">Kenntnisse</h2>
-        <ul class="skills">
-            <li>Python (Numpy, Pandas, Matplotlib)</li>
-            <li>SQL/NOSQL (MySQL/MongoDB)</li>
-            <li>Objektorientierte Programmierung (Java)</li>
-            <li>UML/BPMN (Modeling Language)</li>
-            <li>JavaScript (Node.js/Express)</li>
-            <li>Microsoft Office</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>Sprachen</h2>
+            <ul class="languages">
+                <li>Deutsch (C1)</li>
+                <li>Englisch (B2)</li>
+                <li>Arabisch (Muttersprache)</li>
+                <li>Französisch (B2)</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2 class="section-title">Sprachen</h2>
-        <ul class="languages">
-            <li>Deutsch</li>
-            <li>Englisch</li>
-            <li>Arabisch</li>
-            <li>Französisch</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>Eigenschaften</h2>
+            <ul>
+                <li>Agile Arbeitsweise</li>
+                <li>Teamarbeit und Kommunikation</li>
+                <li>Kontinuierliche Weiterbildung und Neugier</li>
+                <li>Analytisches Denken</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2 class="section-title">Hobbys und Interessen</h2>
-        <ul class="hobbies">
-            <li>Fussball spielen</li>
-            <li>Schwimmen</li>
-            <li>Fitnesstraining</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Eigenschaften</h2>
-        <ul class="skills">
-            <li>Agile Arbeitsweise</li>
-            <li>Teamarbeit und Kommunikation</li>
-            <li>Kontinuierliche Weiterbildung und Neugier</li>
-            <li>Analytisches Denken</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Projekte</h2>
-        <ul>
-            <li><a href="https://github.com/ilyassdablaq/Intellidoc" target="_blank">github.com/ilyassdablaq/Intellidoc</a></li>
-        </ul>
+        <div class="section">
+            <h2>Hobbys und Interessen</h2>
+            <ul class="hobbies">
+                <li>Fussball spielen</li>
+                <li>Schwimmen</li>
+                <li>Fitnesstraining</li>
+            </ul>
+        </div>
     </div>
 </div>
 
